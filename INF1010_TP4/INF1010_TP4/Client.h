@@ -5,7 +5,6 @@
 #include <vector>
 #include "Usager.h"
 #include "Produit.h"
-#include "ProduitAuxEncheres.h"
 
 using namespace std;
 

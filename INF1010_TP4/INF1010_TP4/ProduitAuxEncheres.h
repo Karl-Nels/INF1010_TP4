@@ -14,7 +14,6 @@ public:
 	ProduitAuxEncheres(double prix = 0.0);
 	ProduitAuxEncheres(Fournisseur *fournisseur, const string &nom, int reference,
 		double prix = 0.0);
-
 	double obtenirPrixInitial() const;
 	Client *obtenirEncherisseur() const;
 	void afficher() const;
@@ -24,7 +23,7 @@ public:
 
 private:
 	double prixInitial_;
-	Client *encherisseur_;
+	Client* encherisseur_;
 };
 
 #endif

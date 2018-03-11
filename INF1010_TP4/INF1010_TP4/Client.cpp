@@ -1,5 +1,6 @@
 #include "Client.h"
 #include <iostream>
+#include "ProduitAuxEncheres.h"	
 
 Client::Client(unsigned int codeClient)
     : Usager(),

@@ -14,7 +14,7 @@ class Usager
 
     string obtenirNom() const;
     string obtenirPrenom() const;
-    int obtenirIdentifiant() const;
+    virtual int obtenirIdentifiant() const;
     string obtenirCodePostal() const;
     virtual double obtenirTotalAPayer() const;
     virtual void afficherProfil() const;

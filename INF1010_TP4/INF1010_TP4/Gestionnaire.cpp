@@ -17,12 +17,14 @@ void Gestionnaire::afficherLesProfils() const
 double Gestionnaire::obtenirChiffreAffaires() const
 {
     // TODO
-	double chiffreAffaires;
+	double chiffreAffaires = 0.0;
 
 	for (unsigned i = 0; i < usagers_.size(); i++)
 	{
 		chiffreAffaires += (*usagers_[i]).obtenirTotalAPayer();
 	}
+
+	return chiffreAffaires;
 }
 
 void Gestionnaire::ajouterUsager(Usager *usager)

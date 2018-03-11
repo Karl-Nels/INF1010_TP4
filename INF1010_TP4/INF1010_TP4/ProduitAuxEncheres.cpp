@@ -38,11 +38,11 @@ void ProduitAuxEncheres::modifierPrixInitial(double prixInitial)
 
 void ProduitAuxEncheres::mettreAJourEnchere(Client *encherisseur, double nouveauPrix)
 {
-	bool estLeMemeParieur = (encherisseur_->obtenirNom() ==
-		encherisseur->obtenirNom() && encherisseur_->obtenirPrenom()
-		== encherisseur->obtenirPrenom());
 	// TODO
-	if (!estLeMemeParieur) {
+	if (encherisseur_== nullptr) {
+		encherisseur_ = encherisseur;
+	}
+	else if (encherisseur->obtenirIdentifiant() != encherisseur_->obtenirIdentifiant()) {
 
 		if (nouveauPrix > prix_) {
 
